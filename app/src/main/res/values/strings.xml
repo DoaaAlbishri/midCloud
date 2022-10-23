@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">midCloud2</string>
+
+    <string name="resend"><u> Resend  </u></string>
+    <string name="login"><u> Log in  </u></string>
+    <string name="createnewaccount"><u> Create new account  </u></string>
+
+</resources>
