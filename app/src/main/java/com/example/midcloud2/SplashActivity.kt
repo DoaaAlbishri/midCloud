@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
         Handler().postDelayed({ Lletter.append("O") }, 1500)
         Handler().postDelayed({
             val i = Intent(
-                this, Splash2Activity::class.java
+                this, IndividualHomeActivity::class.java //Splash2Activity
             )
             startActivity(i)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)

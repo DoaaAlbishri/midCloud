@@ -15,7 +15,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="50dp"
+        android:paddingBottom="200dp"
         android:orientation="vertical" >
 
         <ImageView
@@ -30,10 +30,78 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints"></ImageView>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="-100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGO"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="@font/cairo"
+                android:textSize="31dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cairo"
+                    android:elevation="2dp"
+                    android:textSize="14dp"
+                    app:cornerRadius="5dp"
+                    android:background="@drawable/searchbar"
+                    android:textColor="#D4D4D4"
+                    android:inputType="text"
+                    android:gravity="center"
+                    android:hint="Search product, clinic or doctor"
+                    android:layout_marginLeft="20dp" />
+
+                <ImageView
+                    android:id="@+id/barcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_ionic_ios_barcode"
+                    android:layout_marginStart="-50dp"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginLeft="-50dp"></ImageView>
+
+                <ImageView
+                    android:id="@+id/notificationIcon"
+                    android:layout_width="29dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="-7dp"
+                    android:layout_marginStart="25dp"
+                    android:src="@drawable/notification"
+                    tools:ignore="MissingConstraints"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_gravity="center"
             android:src="@drawable/ads1"/>
 
@@ -98,7 +166,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/clinic1"
                         />
 
@@ -108,7 +176,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="19dp"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/clinic2"
                         android:layout_marginLeft="19dp" />
 
@@ -118,7 +186,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="19dp"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/clinic3"
                         />
 
@@ -127,7 +195,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/clinic1"
                         />
 
@@ -137,7 +205,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="19dp"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/clinic2"
                         android:layout_marginLeft="19dp" />
 
@@ -147,7 +215,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="19dp"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/clinic3"
                         />
 
@@ -208,7 +276,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor1"
                         />
 
@@ -218,7 +286,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="19dp"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor2"
                         android:layout_marginLeft="19dp" />
 
@@ -228,7 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="19dp"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor3"
                         />
 
@@ -237,7 +305,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor4"
                         />
 
@@ -247,7 +315,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="19dp"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor5"
                         android:layout_marginLeft="19dp" />
 
@@ -257,7 +325,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="19dp"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor6"
                         />
                 </LinearLayout>
@@ -317,7 +385,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor1"
                         />
 
@@ -327,7 +395,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="19dp"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor2"
                         android:layout_marginLeft="19dp" />
 
@@ -337,7 +405,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="19dp"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor3"
                         />
 
@@ -346,7 +414,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor4"
                         />
 
@@ -356,7 +424,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginStart="19dp"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor5"
                         android:layout_marginLeft="19dp" />
 
@@ -366,7 +434,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="19dp"
                         android:layout_weight="1"
-                        android:background="alp"
+                        android:background="#00F3A526"
                         android:src="@drawable/doctor6"
                         />
                 </LinearLayout>
@@ -380,67 +448,42 @@
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
+        android:background="@drawable/menu_bar"
         android:gravity="center"
-        android:layout_marginTop="20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="LOGO"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:fontFamily="@font/cairo"
-            android:textSize="31dp" />
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            >
-
-            <EditText
-                android:id="@+id/editTextSearch"
+            android:layout_height="wrap_content">
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:fontFamily="@font/cairo"
-                android:elevation="2dp"
-                android:textSize="14dp"
-                app:cornerRadius="5dp"
-                android:background="@drawable/searchbar"
-                android:textColor="#D4D4D4"
-                android:inputType="phone"
-                android:gravity="center"
-                android:hint="Search product, clinic or doctor"
-                />
-
+                android:src="@drawable/homeiconorange"/>
             <ImageView
-                android:id="@+id/barcode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_ionic_ios_barcode"
-                android:layout_marginStart="-50dp"
-                tools:ignore="MissingConstraints"
-                android:layout_marginLeft="-50dp"></ImageView>
-
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/categoryicon"/>
             <ImageView
-                android:id="@+id/notificationIcon"
-                android:layout_width="29dp"
-                android:layout_height="36dp"
-                android:layout_marginTop="-7dp"
-                android:layout_marginStart="25dp"
-                android:src="@drawable/notification"
-                tools:ignore="MissingConstraints"
-                android:layout_marginLeft="20dp">
-            </ImageView>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/carticon"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/wishlisticon"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/profileicon"/>
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
