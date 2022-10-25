@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">midCloud2</string>
+    <string name="app_name">MedCloud</string>
 
     <string name="resend"><u> Resend  </u></string>
     <string name="login"><u> Log in  </u></string>

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NewArrivalActivity">
-
+    tools:context=".BestProductsActivity">
 
 
     <Button
@@ -31,7 +30,7 @@
         android:layout_marginTop="10dp"
         android:background="#0020393D"
         android:fontFamily="@font/cairo"
-        android:text="New Arrival"
+        android:text="Best Products"
         android:clickable="false"
         android:textAllCaps="false"
         android:textColor="@color/white"
@@ -85,14 +84,15 @@
                 android:gravity="center"
                 >
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CVNewArrival1"
+                    android:id="@+id/CVBestProducts1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardUseCompatPadding="true"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp">
+                    android:layout_marginRight="15dp"
+                    >
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -101,15 +101,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:id="@+id/imageNewArrival1"
+                                android:id="@+id/imageBestProducts1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="#00F3A526"
-                                android:src="@drawable/blooddesk"
+                                android:src="@drawable/bloodpressure"
                                 />
                             <ImageButton
-                                android:id="@+id/shareButtonNewArrival1"
+                                android:id="@+id/shareButtonBestProducts1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -122,7 +122,7 @@
                                 />
 
                             <ImageButton
-                                android:id="@+id/favouriteButtonNewArrival1"
+                                android:id="@+id/favouriteButtonBestProducts1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -137,7 +137,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NOVA"
+                            android:text="@string/citizen"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
                             android:layout_marginStart="12dp"
@@ -146,7 +146,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wheelchair"
+                            android:text="@string/bloodpressure"
                             android:textColor="@color/black"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
@@ -164,12 +164,11 @@
                             android:layout_marginLeft="12dp" />
 
                         <Button
-                            android:id="@+id/AddtoCart1"
+                            android:id="@+id/AddtoCart1BP"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:fontFamily="@font/cairo"
                             android:text="Add to Cart"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="9dp"
                             android:layout_marginRight="9dp"
                             android:layout_marginLeft="9dp"
@@ -186,7 +185,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CVNewArrival2"
+                    android:id="@+id/CVBestProducts2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
@@ -201,15 +200,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:id="@+id/imageNewArrival2"
+                                android:id="@+id/imageBestProducts2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="#00F3A526"
-                                android:src="@drawable/blooddesk"
+                                android:src="@drawable/bloodpressure"
                                 />
                             <ImageButton
-                                android:id="@+id/shareButtonNewArrival2"
+                                android:id="@+id/shareButtonBestProducts2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -222,7 +221,7 @@
                                 />
 
                             <ImageButton
-                                android:id="@+id/favouriteButtonNewArrival2"
+                                android:id="@+id/favouriteButtonBestProducts2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -237,7 +236,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NOVA"
+                            android:text="@string/citizen"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
                             android:layout_marginStart="12dp"
@@ -246,7 +245,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wheelchair"
+                            android:text="@string/bloodpressure"
                             android:textColor="@color/black"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
@@ -264,12 +263,11 @@
                             android:layout_marginLeft="12dp" />
 
                         <Button
-                            android:id="@+id/AddtoCart2"
+                            android:id="@+id/AddtoCart2BP"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:fontFamily="@font/cairo"
                             android:text="Add to Cart"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="9dp"
                             android:layout_marginRight="9dp"
                             android:layout_marginLeft="9dp"
@@ -295,14 +293,15 @@
                 >
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CVNewArrival3"
+                    android:id="@+id/CVBestProducts3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardUseCompatPadding="true"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp">
+                    android:layout_marginRight="15dp"
+                    >
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -311,14 +310,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:id="@+id/imageNewArrival3"
+                                android:id="@+id/imageBestProducts3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="#00F3A526"
-                                android:src="@drawable/blooddesk"
+                                android:src="@drawable/bloodpressure"
                                 />
                             <ImageButton
+                                android:id="@+id/shareButtonBestProducts3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -331,7 +331,7 @@
                                 />
 
                             <ImageButton
-                                android:id="@+id/favouriteButtonNewArrival3"
+                                android:id="@+id/favouriteButtonBestProducts3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -346,7 +346,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NOVA"
+                            android:text="@string/citizen"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
                             android:layout_marginStart="12dp"
@@ -355,7 +355,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wheelchair"
+                            android:text="@string/bloodpressure"
                             android:textColor="@color/black"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
@@ -373,12 +373,11 @@
                             android:layout_marginLeft="12dp" />
 
                         <Button
-                            android:id="@+id/AddtoCart3"
+                            android:id="@+id/AddtoCart3BP"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:fontFamily="@font/cairo"
                             android:text="Add to Cart"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="9dp"
                             android:layout_marginRight="9dp"
                             android:layout_marginLeft="9dp"
@@ -395,7 +394,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CVNewArrival4"
+                    android:id="@+id/CVBestProducts4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
@@ -410,15 +409,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:id="@+id/imageNewArrival4"
+                                android:id="@+id/imageBestProducts4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="#00F3A526"
-                                android:src="@drawable/blooddesk"
+                                android:src="@drawable/bloodpressure"
                                 />
                             <ImageButton
-                                android:id="@+id/shareButtonNewArrival4"
+                                android:id="@+id/shareButtonBestProducts4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -431,7 +430,7 @@
                                 />
 
                             <ImageButton
-                                android:id="@+id/favouriteButtonNewArrival4"
+                                android:id="@+id/favouriteButtonBestProducts4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -446,7 +445,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NOVA"
+                            android:text="@string/citizen"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
                             android:layout_marginStart="12dp"
@@ -455,7 +454,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wheelchair"
+                            android:text="@string/bloodpressure"
                             android:textColor="@color/black"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
@@ -473,12 +472,11 @@
                             android:layout_marginLeft="12dp" />
 
                         <Button
-                            android:id="@+id/AddtoCart4"
+                            android:id="@+id/AddtoCart4BP"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:fontFamily="@font/cairo"
                             android:text="Add to Cart"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="9dp"
                             android:layout_marginRight="9dp"
                             android:layout_marginLeft="9dp"
@@ -493,6 +491,7 @@
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
             </LinearLayout>
 
             <LinearLayout
@@ -503,14 +502,15 @@
                 >
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CVNewArrival5"
+                    android:id="@+id/CVBestProducts5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="10dp"
                     app:cardUseCompatPadding="true"
                     android:layout_marginEnd="15dp"
-                    android:layout_marginRight="15dp">
+                    android:layout_marginRight="15dp"
+                    >
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -519,15 +519,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:id="@+id/imageNewArrival5"
+                                android:id="@+id/imageBestProducts5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="#00F3A526"
-                                android:src="@drawable/blooddesk"
+                                android:src="@drawable/bloodpressure"
                                 />
                             <ImageButton
-                                android:id="@+id/shareButtonNewArrival5"
+                                android:id="@+id/shareButtonBestProducts5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -540,7 +540,7 @@
                                 />
 
                             <ImageButton
-                                android:id="@+id/favouriteButtonNewArrival5"
+                                android:id="@+id/favouriteButtonBestProducts5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -555,7 +555,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NOVA"
+                            android:text="@string/citizen"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
                             android:layout_marginStart="12dp"
@@ -564,7 +564,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wheelchair"
+                            android:text="@string/bloodpressure"
                             android:textColor="@color/black"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
@@ -582,12 +582,11 @@
                             android:layout_marginLeft="12dp" />
 
                         <Button
-                            android:id="@+id/AddtoCart5"
+                            android:id="@+id/AddtoCart5BP"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:fontFamily="@font/cairo"
                             android:text="Add to Cart"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="9dp"
                             android:layout_marginRight="9dp"
                             android:layout_marginLeft="9dp"
@@ -604,7 +603,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/CVNewArrival6"
+                    android:id="@+id/CVBestProducts6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:cardBackgroundColor="@color/white"
@@ -619,15 +618,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content">
                             <ImageView
-                                android:id="@+id/imageNewArrival6"
+                                android:id="@+id/imageBestProducts6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:background="#00F3A526"
-                                android:src="@drawable/blooddesk"
+                                android:src="@drawable/bloodpressure"
                                 />
                             <ImageButton
-                                android:id="@+id/shareButtonNewArrival6"
+                                android:id="@+id/shareButtonBestProducts6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -640,7 +639,7 @@
                                 />
 
                             <ImageButton
-                                android:id="@+id/favouriteButtonNewArrival6"
+                                android:id="@+id/favouriteButtonBestProducts6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
@@ -655,7 +654,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="NOVA"
+                            android:text="@string/citizen"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
                             android:layout_marginStart="12dp"
@@ -664,7 +663,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Wheelchair"
+                            android:text="@string/bloodpressure"
                             android:textColor="@color/black"
                             android:textSize="14dp"
                             android:fontFamily="@font/cairo"
@@ -682,12 +681,11 @@
                             android:layout_marginLeft="12dp" />
 
                         <Button
-                            android:id="@+id/AddtoCart6"
+                            android:id="@+id/AddtoCart6BP"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:fontFamily="@font/cairo"
                             android:text="Add to Cart"
-                            android:layout_marginTop="5dp"
                             android:layout_marginStart="9dp"
                             android:layout_marginRight="9dp"
                             android:layout_marginLeft="9dp"
@@ -754,138 +752,138 @@
                     android:background="#909090"
                     />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:ignore="MissingConstraints">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Sort By"
-                    android:textSize="24dp"
-                    android:layout_marginLeft="20dp"
-                    android:fontFamily="@font/cairo"
-                    android:gravity="start" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                tools:ignore="MissingConstraints">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    >
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
 
-                    <CheckBox
-                        android:id="@+id/allCheckbox"
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:button="@drawable/rounded_checkbox"
-                        android:text="High Rating"
-                        android:checked="true"
+                        android:text="Sort By"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="20dp"
                         android:fontFamily="@font/cairo"
-                        android:textSize="18dp"
-                        android:paddingStart="8dp"
-                        android:clickable="false"
-                        android:paddingLeft="8dp" />
+                        android:gravity="start" />
 
-                    <CheckBox
-                        android:id="@+id/sunCheckbox"
-                        android:clickable="false"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:button="@drawable/rounded_checkbox"
-                        android:layout_marginStart="40dp"
-                        android:text="Price (High To Low)"
-                        android:fontFamily="@font/cairo"
-                        android:textSize="18dp"
-                        android:paddingStart="8dp"
-                        android:paddingLeft="8dp"
-                        android:layout_marginLeft="40dp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    >
-
-                    <CheckBox
-                        android:id="@+id/Checkbox3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:button="@drawable/rounded_checkbox"
-                        android:text="Most Popular"
-                        android:checked="true"
-                        android:fontFamily="@font/cairo"
-                        android:textSize="18dp"
-                        android:paddingStart="8dp"
-                        android:clickable="false"
-                        android:paddingLeft="8dp" />
-
-                    <CheckBox
-                        android:id="@+id/Checkbox4"
-                        android:clickable="false"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:button="@drawable/rounded_checkbox"
-                        android:layout_marginStart="25dp"
-                        android:text="Price (Low To High)"
-                        android:fontFamily="@font/cairo"
-                        android:textSize="18dp"
-                        android:paddingStart="8dp"
-                        android:paddingLeft="8dp"
-                        android:layout_marginLeft="25dp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:gravity="center"
-                    android:layout_marginTop="20dp"
-                    >
-                    <Button
-                        android:id="@+id/ArabicButton"
-                        android:layout_width="140dp"
-                        android:layout_height="60dp"
-                        android:fontFamily="@font/cairo"
-                        android:text="Clear"
-                        android:textAllCaps="false"
-                        android:textColor="@color/main_color"
-                        android:background="@drawable/button_white"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:layout_marginEnd="20dp"
-                        android:layout_marginRight="20dp"
-                        app:cornerRadius="10dp"
-                        tools:ignore="MissingConstraints" />
+                    tools:ignore="MissingConstraints">
 
-                    <Button
-                        android:id="@+id/EnglishButton"
-                        android:layout_width="140dp"
-                        android:layout_height="60dp"
-                        android:fontFamily="@font/cairo"
-                        android:text="Apply"
-                        android:textAllCaps="false"
-                        android:textSize="20dp"
-                        android:textStyle="bold"
-                        app:cornerRadius="10dp"
-                        android:backgroundTint="@color/main_color"
-                        tools:ignore="MissingConstraints"
-                      />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        >
 
+                        <CheckBox
+                            android:id="@+id/allCheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:text="High Rating"
+                            android:checked="true"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:clickable="false"
+                            android:paddingLeft="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/sunCheckbox"
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:layout_marginStart="40dp"
+                            android:text="Price (High To Low)"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:paddingLeft="8dp"
+                            android:layout_marginLeft="40dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/Checkbox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:text="Most Popular"
+                            android:checked="true"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:clickable="false"
+                            android:paddingLeft="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/Checkbox4"
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:layout_marginStart="25dp"
+                            android:text="Price (Low To High)"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:paddingLeft="8dp"
+                            android:layout_marginLeft="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <Button
+                            android:id="@+id/ArabicButton"
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:fontFamily="@font/cairo"
+                            android:text="Clear"
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_color"
+                            android:background="@drawable/button_white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            app:cornerRadius="10dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/EnglishButton"
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:fontFamily="@font/cairo"
+                            android:text="Apply"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp"
+                            android:backgroundTint="@color/main_color"
+                            tools:ignore="MissingConstraints"
+                            />
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
-
-            </LinearLayout>
 
             </LinearLayout>
 
