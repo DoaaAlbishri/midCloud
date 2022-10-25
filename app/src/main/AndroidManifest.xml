@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidCloud2">
         <activity
+            android:name=".BloodProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".ClinicProfileActivity"
             android:exported="false" />
         <activity
