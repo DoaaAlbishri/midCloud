@@ -465,7 +465,7 @@
                                 <Button
                                     android:id="@+id/AddtoCart1"
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="40dp"
                                     android:fontFamily="@font/cairo"
                                     android:text="Add to Cart"
                                     android:layout_marginStart="9dp"
@@ -564,7 +564,7 @@
                             <Button
                                 android:id="@+id/AddtoCart2"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -663,7 +663,7 @@
                             <Button
                                 android:id="@+id/AddtoCart3"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -762,7 +762,7 @@
                             <Button
                                 android:id="@+id/AddtoCart4"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -861,7 +861,7 @@
                             <Button
                                 android:id="@+id/AddtoCart5"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -960,7 +960,7 @@
                             <Button
                                 android:id="@+id/AddtoCart6"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -1111,7 +1111,7 @@
                             <Button
                                 android:id="@+id/AddtoCart1BP"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -1210,7 +1210,7 @@
                             <Button
                                 android:id="@+id/AddtoCart2BP"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -1309,7 +1309,7 @@
                             <Button
                                 android:id="@+id/AddtoCart3BP"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -1408,7 +1408,7 @@
                             <Button
                                 android:id="@+id/AddtoCart4BP"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -1507,7 +1507,7 @@
                             <Button
                                 android:id="@+id/AddtoCart5BP"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"
@@ -1606,7 +1606,7 @@
                             <Button
                                 android:id="@+id/AddtoCart6BP"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="40dp"
                                 android:fontFamily="@font/cairo"
                                 android:text="Add to Cart"
                                 android:layout_marginStart="9dp"

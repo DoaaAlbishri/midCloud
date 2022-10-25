@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidCloud2">
         <activity
+            android:name=".NewArrivalActivity"
+            android:exported="false" />
+        <activity
             android:name=".AllDoctorsActivity"
             android:exported="false" />
         <activity
