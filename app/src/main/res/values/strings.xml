@@ -6,6 +6,7 @@
     <string name="createnewaccount"><u> Create new account  </u></string>
     <string name="bloodpressure">Blood Pressure</string>
     <string name="citizen">Citizen</string>
+    <string name="QA">Q &amp; A</string>
     <string name="notification">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</string>
 
 </resources>
