@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BloodProductDetailsActivity">
-
+    tools:context=".ChairProductDetailsActivity">
 
 
     <Button
@@ -56,139 +55,156 @@
         app:layout_constraintTop_toBottomOf="@id/sortBtn"
         tools:ignore="MissingConstraints">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="300dp"
-        android:orientation="vertical" >
-
-        <ImageView
-            android:id="@+id/image_details"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:src="@drawable/blood_details_image"
-            tools:ignore="MissingConstraints"></ImageView>
-
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/bloodpressure"
-                android:textColor="@color/black"
-                android:textSize="22dp"
-                android:fontFamily="@font/cairo"
-                android:layout_marginStart="12dp"
-                android:layout_marginLeft="12dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:layout_marginEnd="30dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:layout_marginRight="30dp">
+            android:layout_height="wrap_content"
+            android:paddingBottom="300dp"
+            android:orientation="vertical" >
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:id="@+id/image_details"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/rating"/>
+                android:orientation="horizontal"
+                android:src="@drawable/chair_details_image"
+                tools:ignore="MissingConstraints"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wheelchair"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:fontFamily="@font/cairo"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rating"/>
+                </LinearLayout>
+
             </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Citizen | China"
-            android:textColor="@color/black"
-            android:textSize="18dp"
-            android:fontFamily="@font/cairo"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="40 SR"
-            android:textColor="#6429F4"
-            android:textSize="24dp"
-            android:fontFamily="@font/cairo"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="12dp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Description"
+                android:text="NOVA | China"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:fontFamily="@font/cairo"
                 android:layout_marginStart="12dp"
                 android:layout_marginLeft="12dp" />
 
+
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="right"
-                android:layout_marginEnd="30dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:layout_marginRight="30dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icon_ionic_ios_arrow_more_black"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Reviews (128)"
-                android:textColor="@color/black"
-                android:textSize="18dp"
-                android:fontFamily="@font/cairo"
                 android:layout_marginStart="12dp"
-                android:layout_marginLeft="12dp" />
+                android:layout_marginLeft="12dp"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/_40sr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 SR"
+                    android:textColor="#E20505"
+                    android:textSize="24dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/cairo"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/discount50"/>
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:layout_marginEnd="30dp"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:layout_marginRight="30dp">
+                android:layout_marginTop="20dp"
+                >
 
-                <ImageView
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icon_ionic_ios_arrow_more_black"/>
+                    android:text="Description"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/cairo"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_ionic_ios_arrow_more_black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews (128)"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/cairo"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_ionic_ios_arrow_more_black"/>
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
-
-    </LinearLayout>
     </ScrollView>
 
 
@@ -214,40 +230,40 @@
         android:layout_marginEnd="10dp"
 
         >
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/gray_border7"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+
+            >
+            <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:gravity="center"
-                android:background="@drawable/gray_border7"
-                android:paddingRight="5dp"
-                android:paddingLeft="5dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/minus"/>
 
-                >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/minus"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:fontFamily="@font/cairo"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="1"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:fontFamily="@font/cairo"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_marginEnd="12dp"
-                    />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/add"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"/>
 
 
-            </LinearLayout>
+        </LinearLayout>
 
 
         <LinearLayout

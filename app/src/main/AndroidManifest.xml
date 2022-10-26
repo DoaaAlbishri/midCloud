@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidCloud2">
         <activity
+            android:name=".ChairProductDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".BloodProductDetailsActivity"
             android:exported="false" />
         <activity
