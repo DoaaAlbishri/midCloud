@@ -105,7 +105,7 @@
                 android:layout_gravity="right"
                 android:gravity="center">
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/cashoutButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16dp"
