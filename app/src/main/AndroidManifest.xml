@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidCloud2">
         <activity
+            android:name=".TermsConditionsActivity2"
+            android:exported="false" />
+        <activity
             android:name=".QAActivity"
             android:exported="false" />
         <activity
