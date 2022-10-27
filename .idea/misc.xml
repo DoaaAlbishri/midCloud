@@ -7,6 +7,7 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable-hdpi/rounded_checked.xml" value="0.2703125" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable-hdpi/rounded_unchecked.xml" value="0.2703125" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable/button_white.xml" value="0.2703125" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable/button_white_graybr.xml" value="0.2703125" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable/graay_border.xml" value="0.2703125" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable/gray_border10.xml" value="0.2703125" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/drawable/gray_border7.xml" value="0.2703125" />
@@ -21,7 +22,7 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_best_products.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_blood_product_details.xml" value="0.264" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_cashout.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_chair_product_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_chair_product_details.xml" value="0.176" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_change_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_clinic_profile.xml" value="0.152" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_doctor_profile.xml" value="0.2" />
@@ -34,6 +35,7 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_new_arrival.xml" value="0.2" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_notifications.xml" value="0.264" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_order_details.xml" value="0.2" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_orders.xml" value="0.12" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_otpforget_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_otpindividual_sign_up.xml" value="0.25416666666666665" />

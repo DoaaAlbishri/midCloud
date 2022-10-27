@@ -704,6 +704,217 @@
     </LinearLayout>
     </ScrollView>
 
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#32202020"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="-20dp"
+        android:visibility="gone"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="100dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:layout_width="171dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#909090"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Filter By"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/cairo"
+                        android:gravity="start" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/allCheckbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:text="Pending"
+                            android:checked="true"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:clickable="false"
+                            android:paddingLeft="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/sunCheckbox"
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:layout_marginStart="40dp"
+                            android:text="Processing"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:paddingLeft="8dp"
+                            android:layout_marginLeft="40dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/Checkbox3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:text="Completed"
+                            android:checked="true"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:clickable="false"
+                            android:paddingLeft="8dp" />
+
+                        <CheckBox
+                            android:id="@+id/Checkbox4"
+                            android:clickable="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:layout_marginStart="25dp"
+                            android:text="Cancelled"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:paddingLeft="8dp"
+                            android:layout_marginLeft="25dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <CheckBox
+                            android:id="@+id/Checkbox5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/rounded_checkbox"
+                            android:text="Rejected"
+                            android:checked="true"
+                            android:fontFamily="@font/cairo"
+                            android:textSize="18dp"
+                            android:paddingStart="8dp"
+                            android:clickable="false"
+                            android:paddingLeft="8dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        >
+                        <Button
+                            android:id="@+id/ArabicButton"
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:fontFamily="@font/cairo"
+                            android:text="Clear"
+                            android:textAllCaps="false"
+                            android:textColor="@color/main_color"
+                            android:background="@drawable/button_white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginRight="20dp"
+                            app:cornerRadius="10dp"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/EnglishButton"
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:fontFamily="@font/cairo"
+                            android:text="Apply"
+                            android:textAllCaps="false"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp"
+                            android:backgroundTint="@color/main_color"
+                            tools:ignore="MissingConstraints"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
     <ImageView
         android:id="@+id/tabBarLayout"
         android:layout_width="match_parent"

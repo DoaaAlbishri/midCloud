@@ -317,4 +317,105 @@
 
     </LinearLayout>
 
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#32202020"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/close_gray"/>
+
+                    <ImageView
+                        android:layout_width="97dp"
+                        android:layout_height="97dp"
+                        android:src="@drawable/right_big"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product was added to the cart"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/cairo"
+                        android:textSize="23dp" />
+
+                    <Button
+                        android:id="@+id/ArabicButton"
+                        android:layout_width="288dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/cairo"
+                        android:text="Continue Shopping"
+                        android:textAllCaps="false"
+                        android:textColor="@color/main_color"
+                        android:background="@drawable/button_white"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp"
+                        tools:ignore="MissingConstraints" />
+
+                    <Button
+                        android:layout_width="288dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="20dp"
+                        android:gravity="center"
+                        app:cornerRadius="10dp"
+                        android:fontFamily="@font/cairo"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/main_color"
+                        android:textAllCaps="false"
+                        android:text="View Cart"
+                        tools:ignore="MissingConstraints" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
