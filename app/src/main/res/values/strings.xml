@@ -7,6 +7,7 @@
     <string name="bloodpressure">Blood Pressure</string>
     <string name="citizen">Citizen</string>
     <string name="QA">Q &amp; A</string>
+    <string name="thank_you">You have successfully created your account.\n Your registration is under review, once it is verify\nfrom us you can avail our services.\n\n To Contact Us : XXXX@XXXX.XXX</string>
     <string name="order_num">Order No.: 1223330Ca</string>
     <string name="message1">You have successfully \n completed the order</string>
     <string name="message2">The amount will be transferred to \n your account within 2-3 working days</string>

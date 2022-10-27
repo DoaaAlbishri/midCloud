@@ -23,6 +23,9 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_all_reviews.xml" value="0.136" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_best_products.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_blood_product_details.xml" value="0.264" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_business_categories.xml" value="0.16486486486486487" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_business_home.xml" value="0.128" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_business_sign_up.xml" value="0.11200000000000002" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_cart.xml" value="0.264" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_cashout.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_chair_product_details.xml" value="0.176" />
@@ -33,7 +36,7 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_edit_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_forget_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_help_center.xml" value="0.24010416666666667" />
-        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_individual_categories.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_individual_categories.xml" value="0.136" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_individual_home.xml" value="0.152" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_individuals_sign_up.xml" value="0.2" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_login.xml" value="0.264" />
@@ -45,6 +48,7 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_notifications.xml" value="0.264" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_order_details.xml" value="0.2" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_orders.xml" value="0.12" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_otpbusiness_sign_up.xml" value="0.15574324324324323" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_otpforget_password.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_otpindividual_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_profile.xml" value="0.152" />
@@ -56,6 +60,7 @@
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_splash2.xml" value="0.264" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_terms_conditions2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_thank_you.xml" value="0.16486486486486487" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_wallet.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/duaa_/AndroidStudioProjects/midCloud2/app/src/main/res/layout/activity_wishlist.xml" value="0.25416666666666665" />
       </map>

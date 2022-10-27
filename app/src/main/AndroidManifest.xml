@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidCloud2">
         <activity
+            android:name=".BusinessCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThankYouActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OTPBusinessSignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusinessSignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".MessageCashoutActivity"
             android:exported="false" />
         <activity

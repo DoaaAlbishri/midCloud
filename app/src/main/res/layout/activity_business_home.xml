@@ -1,0 +1,2799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessHomeActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/tabBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:src="@drawable/mask_group_1"
+                android:layout_marginTop="-10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="-100dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGO"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/cairo"
+                    android:textSize="31dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/editTextSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:ems="10"
+                        android:fontFamily="@font/cairo"
+                        android:elevation="2dp"
+                        android:textSize="14dp"
+                        app:cornerRadius="5dp"
+                        android:background="@drawable/searchbar"
+                        android:paddingRight="25dp"
+                        android:drawableRight="@drawable/icon_ionic_ios_barcode"
+                        android:textColor="#D4D4D4"
+                        android:inputType="text"
+                        android:gravity="center"
+                        android:hint="Search product, clinic or doctor"
+                        android:layout_marginLeft="20dp" />
+
+                    <ImageView
+                        android:id="@+id/barcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_ionic_ios_barcode"
+                        android:layout_marginStart="-50dp"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginLeft="-50dp"></ImageView>
+
+                    <ImageView
+                        android:id="@+id/notificationIcon"
+                        android:layout_width="29dp"
+                        android:layout_height="36dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="-7dp"
+                        android:layout_marginStart="25dp"
+                        android:src="@drawable/notification"
+                        tools:ignore="MissingConstraints"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp">
+                    </ImageView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ads1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14NewArrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cairo"
+                        android:text="New Arrival"
+                        android:textColor="#1D3639"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginEnd="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:id="@+id/viewAllNewArrival"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/cairo"
+                            android:text="View All"
+                            android:textColor="#FEC260"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:id="@+id/scrollViewNewArrival"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVNewArrival1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageNewArrival1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonNewArrival1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonNewArrival1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVNewArrival2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageNewArrival2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonNewArrival2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonNewArrival2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVNewArrival3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageNewArrival3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonNewArrival3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonNewArrival3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVNewArrival4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageNewArrival4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonNewArrival4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonNewArrival4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVNewArrival5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageNewArrival5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonNewArrival5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonNewArrival5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVNewArrival6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageNewArrival6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonNewArrival6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonNewArrival6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView14BestProducts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cairo"
+                        android:text="Best Products"
+                        android:textColor="#1D3639"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginEnd="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:id="@+id/viewAllBestProducts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/cairo"
+                            android:text="View All"
+                            android:textColor="#FEC260"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:id="@+id/scrollViewBestProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVBestProducts1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageBestProducts1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonBestProducts1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonBestProducts1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart1BP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVBestProducts2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageBestProducts2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonBestProducts2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonBestProducts2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart2BP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVBestProducts3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageBestProducts3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonBestProducts3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonBestProducts3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart3BP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVBestProducts4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageBestProducts4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonBestProducts4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonBestProducts4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart4BP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVBestProducts5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageBestProducts5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonBestProducts5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonBestProducts5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart5BP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/CVBestProducts6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:id="@+id/imageBestProducts6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:id="@+id/shareButtonBestProducts6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:id="@+id/favouriteButtonBestProducts6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:id="@+id/AddtoCart6BP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cairo"
+                        android:text="Best Cat.1"
+                        android:textColor="#1D3639"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginEnd="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/cairo"
+                            android:text="View All"
+                            android:textColor="#FEC260"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/blooddesk"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="NOVA"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wheelchair"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="33dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/cairo"
+                        android:text="Best Cat.2"
+                        android:textColor="#1D3639"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_marginEnd="30dp"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="30dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/cairo"
+                            android:text="View All"
+                            android:textColor="#FEC260"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fillViewport="true"
+                    android:scrollbars="none"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp"
+                            app:cardUseCompatPadding="true"
+                            >
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <androidx.constraintlayout.widget.ConstraintLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:src="@drawable/bloodpressure"
+                                        />
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginLeft="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        android:src="@drawable/sharebutton"
+                                        />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="#00F3A526"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginRight="8dp"
+                                        app:layout_constraintTop_toTopOf="parent"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        android:src="@drawable/hearticon"
+                                        />
+                                </androidx.constraintlayout.widget.ConstraintLayout>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/citizen"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/bloodpressure"
+                                    android:textColor="@color/black"
+                                    android:textSize="14dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="40 SR"
+                                    android:textColor="@color/black"
+                                    android:textSize="16dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:layout_marginStart="12dp"
+                                    android:layout_marginLeft="12dp" />
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:fontFamily="@font/cairo"
+                                    android:text="Add to Cart"
+                                    android:layout_marginStart="9dp"
+                                    android:layout_marginRight="9dp"
+                                    android:layout_marginLeft="9dp"
+                                    android:layout_marginEnd="9dp"
+                                    android:layout_marginBottom="12dp"
+                                    android:textAllCaps="false"
+                                    android:drawableLeft="@drawable/shopping_cart"
+                                    android:textColor="@color/main_color"
+                                    android:background="@drawable/button_white"
+                                    android:textSize="14dp"
+                                    tools:ignore="MissingConstraints" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/menu_bar"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/homeiconorange"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/categoryicon"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/carticon"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/wishlisticon"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="42dp"
+                android:src="@drawable/profileicon"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#32202020"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="-20dp"
+        android:visibility="gone"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <View
+                    android:layout_width="171dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#909090"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="right"
+                    android:layout_marginRight="5dp">
+
+
+                    <Button
+                        android:id="@+id/cancelBtnCV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#0020393D"
+                        android:fontFamily="@font/cairo"
+                        android:text="Close"
+                        android:layout_marginLeft="15dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        ></Button>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Barcode Scan"
+                    android:textSize="26dp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:orientation="vertical"
+                    android:background="#E2E2E2"
+                    android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/barcode_just"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Scroll the barcode and it will be
+redirected you automatically"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:minLines="2"
+                    />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
