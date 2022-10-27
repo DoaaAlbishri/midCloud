@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MidCloud2">
         <activity
+            android:name=".MessageCashoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageHelpCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageCheckoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".CheckoutActivity"
             android:exported="false" />
         <activity
